@@ -60,11 +60,12 @@ public class MainActivity extends AppCompatActivity {
         secs_.setEnabled(false);
         startButton_.setEnabled(false);
         long milliseconds = ((minutes*60)*1000)+(seconds*1000);
-        Context context = getApplicationContext();
+        //Toast for checking values
+        /*Context context = getApplicationContext();
         CharSequence text = String.valueOf(minutes)+":"+String.valueOf(seconds);
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        toast.show();*/
         CountDownTimer countDownTimer = new CountDownTimer(milliseconds, 1000) {
 
             public void onTick(long millisUntilFinished) {
